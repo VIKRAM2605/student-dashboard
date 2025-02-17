@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style media="only screen">
+      :root {
+        --button-background-color: transparent;
+        --button-text-color: #212529;
+        --button-color-border-primary:transparent;
+        --button-hover-background-color: rgba(0, 0, 0, 0.1);
+        --select-chevron: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23182230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 9L12 15L18 9"/></svg>');
+
+        overflow: hidden;
+        font-family: -apple-system, "system-ui", "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+
+      :root[data-dark-mode="false"] {
+        background:transparent;
+      }
+
+      :root[data-dark-mode="true"] {
+        --button-text-color:none;
+        --button-color-border-primary: rgba(60, 39, 39, 0.2);
+        --button-hover-background-color: #2a343e;
+        --select-chevron: url('data:image/svg+xml;utf8,<svg  fill="none" stroke="%23667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 9L12 15L18 9"/></svg>');
+
+        background:transparent;
+        color:transparent;
+      }
+
+      :root,
+      body,
+      #root {
+        height:100%;
+        width: 100%;
+        margin: 0;
+        background:transparent;
+        background-color:transparent;
+        box-sizing: border-box;
+      }
+
+      #root {
+        display: grid;
+        grid-auto-rows: minmax(0, 1fr);
+        grid-auto-columns: minmax(0, 1fr);
+        padding: 0rem;
+        padding-top:1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+  </body>
+</html>
