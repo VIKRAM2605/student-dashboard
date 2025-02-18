@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { AgCharts } from "ag-charts-react";
 import getData from "./Data";
+import './donut.css'
 const ChartExample = () => {
   const [options, setOptions] = useState({
     title: {
@@ -50,7 +51,12 @@ const ChartExample = () => {
     ],
   });
 
-  return <AgCharts options={options} style={{ width: "500px", height: "300px" }}
+  return <AgCharts options={options} className="chart-container"
+  style={{
+    width: "100%",
+    height: "100%",
+  }}
+
   />;
 };
 export default ChartExample;
